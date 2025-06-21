@@ -1,0 +1,85 @@
+/* Default Styles (Already Present) */
+
+/* Responsive Design */
+@media screen and (max-width: 1024px) {
+
+    /* Navbar Adjustments */
+    #navbar {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .search {
+        width: 80%;
+        margin-bottom: 10px;
+    }
+    .signin2{
+        display: none;
+    }
+
+}
+
+/* Mobile First Approach */
+@media (max-width: 768px) {
+
+    /* Navbar Adjustments */
+    .nav-logo {
+        height: 40px !important;
+    }
+
+    h1.text-3xl {
+        font-size: 1.5rem !important;
+    }
+
+    .cart-icon {
+        font-size: 1.2rem !important;
+    }
+
+
+    .cart {
+        width: 100%;
+        padding: 0.8rem;
+    }
+
+    .signin2{
+        display: none;
+    }
+}
+
+/* General Responsive Adjustments */
+@media (max-width: 1024px) {
+
+    /* Navbar Mobile Menu */
+    #mobile-menu {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        width: 100%;
+    }
+
+    #mobile-menu.active {
+        display: block;
+    }
+
+    /* Search Bar Adjustments */
+    .search-bar {
+        width: 150px;
+    }
+
+    .mobile-search-container {
+        display: none;
+        padding: 1rem;
+        background: white;
+    }
+
+    .mobile-search-container.active {
+        display: block;
+    }
+    .signin2{
+        display: none;
+    }
+
+}

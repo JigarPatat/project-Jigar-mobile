@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jigar Mobile | shop items</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/shop.css">
+    <link rel="icon" type="image/png" href="assets/favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+
+</head>
+
+<body>
+    <nav id="navbar"
+        class="bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 p-4 shadow-lg fixed top-0 w-full z-50 transition-all">
+        <div class="max-w-7xl mx-auto flex justify-between it ems-center relative">
+            <div class="flex items-center space-x-3">
+                <img src="assets/jigarlogo.png" alt="Mobile Point Logo" class="h-12 nav-logo">
+                <h1 class="text-white text-3xl font-extrabold tracking-wide animate-pulse">JIGAR MOBILE</h1>
+            </div>
+
+            <!-- Desktop Navbar -->
+            <div class="hidden md:flex space-x-6 items-center">
+                <a href="index.html" class="nav-item text-white text-lg font-semibold">Home</a>
+                <a href="shop.html" class="text-white text-lg font-semibold paddi2">Shop</a>
+                <a href="offer.html" class="nav-item text-white text-lg font-semibold">About</a>
+                <a href="contact.html" class="nav-item text-white text-lg font-semibold">Contact</a>
+                <input type="text" id="search-bar" placeholder="Search..." class="search-bar">
+                <button id="search-btn" class="text-white text-xl ml-2 sbtn">🔍</button>
+            </div>
+            <div>
+                <a href="cart.html" class="text-white text-2xl cart-icon">
+                    <span class="cart-emoji">🛒</span> Cart
+                </a>
+                <a href="signin.html"
+                    class="bg-white text-gray-900 px-5 py-2 rounded-full font-bold shadow-lg hover:bg-gray-200 transition text-lg signin2">Login</a>
+            </div>
+            <!-- Mobile Navbar Buttons -->
+            <div class="flex md:hidden space-x-3">
+                <button id="mobile-search-btn" class="text-white text-xl">🔍</button>
+                <button id="menu-btn" class="text-white text-3xl font-bold">☰</button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="bg-white text-black p-4 mt-2 shadow-lg rounded-lg">
+            <a href="index.html" class="block py-2 text-lg font-semibold">Home</a>
+            <a href="shop.html" class="block py-2 text-lg font-semibold">Shop</a>
+            <a href="offer.html" class="block py-2 text-lg font-semibold">About</a>
+            <a href="contact.html" class="block py-2 text-lg font-semibold">Contact</a>
+            <a href="signin.html"
+                class="block py-2 bg-blue-500 text-white text-center rounded-lg font-bold text-lg hover:bg-blue-600 transition mt-2">Login</a>
+        </div>
+    </nav>
+
+    <!-- Mobile Search Bar -->
+    <div id="mobile-search-container" class="mobile-search-container">
+        <input type="text" placeholder="Search..." class="mobile-search-bar">
+    </div>
+
+
+
+    <div class="d-sec">
+        <div class="bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 head1">
+            <h1>Shop latest Smartphones</h1>
+        </div>
+
+
+        <div class="product">
+            <div>
+                <img src="assets/vivo x200 pro.png" alt="vivo-x200-pro" class="devices">
+            </div>
+            <div>
+                <h2 class="name">Vivo X200 Pro 5G</h2>
+                <ul>
+                    <li>• 17.22 cm (6.78 inch) Display</li>
+                    <li>• 200 MP ZEISS + 50 MP ZEISS + 50 MP | 32 MP front camera</li>
+                    <li>• 6000 mAh Battery</li>
+                    <li>• Dimensity 9400 processor</li>
+                </ul>
+            </div>
+            <div>
+                <h2 class="price">₹94,999</h2>
+                <p class="oprice">₹1,01,999</p>
+                <button type="button" class="cart">Add to Cart</button>
+            </div>
+
+        </div>
+
+        <div class="product">
+            <div>
+
+                <img src="assets/samsung s25 ultra.png" alt="galaxy-s25-ultra" class="devices samsung">
+            </div>
+            <div>
+                <h2 class="name">SAMSUNG Galaxy S25 Ultra 5G</h2>
+                <ul>
+                    <li>• 17.53 cm (6.9 inch) Quad HD+ Display</li>
+                    <li>• 200MP + 50MP + 50MP + 10MP | 12MP front camera</li>
+                    <li>• 5000 mAh Battery</li>
+                    <li>• 8 Elite for Galaxy Processor</li>
+                </ul>
+            </div>
+            <div>
+                <h2 class="price">₹1,29,999</h2>
+                <!-- <p class="oprice">₹</p> -->
+                <button type="button" class="cart">Add to Cart</button>
+            </div>
+
+        </div>
+        <hr>
+        <div class="product">
+            <div>
+
+                <img src="assets/Iphone 16 pro max.png" alt="IPhone-16-pro-max" class="devices iphone">
+            </div>
+            <div>
+                <h2 class="name">Apple iPhone 16 Pro Max</h2>
+                <ul>
+                    <li>• 17.53 cm (6.9 inch) Super Retina XDR Display</li>
+                    <li>• 48MP + 48MP + 12MP | 12MP Front Camera</li>
+                    <!-- <li>• 3500 mAh Battery</li> -->
+                    <li>• A18 Pro Chip, 6 Core Processor Processor</li>
+                </ul>
+            </div>
+            <div>
+                <h2 class="price">₹1,55,900</h2>
+                <p class="oprice">₹1,64,900</p>
+                <button type="button" class="cart">Add to Cart</button>
+            </div>
+        </div>
+
+
+        <div class="product">
+            <div>
+
+                <img src="assets/Iq 13.png" alt=" iq 13" class="devices">
+            </div>
+            <div>
+                <h2 class="name">iQOO 13 5G</h2>
+                <ul>
+                    <li>• 6.82" World’s 1st Q10 2K LTPO AMOLED display </li>
+                    <li>• 50 MP ZEISS + 50 MP + 50 MP | 32 MP front camera</li>
+                    <li>• 6000 mAh Battery</li>
+                    <li>• Snapdragon 8 Elite processor</li>
+                </ul>
+            </div>
+            <div>
+                <h2 class="price">₹54,999</h2>
+                <p class="oprice">₹61,999</p>
+                <button type="button" class="cart">Add to Cart</button>
+            </div>
+
+        </div>
+        <hr>
+        <div class="product">
+            <div>
+
+                <img src="assets/Nokia 9 PureView.png" alt=" iq 13" class="devices">
+            </div>
+            <div>
+                <h2 class="name">Nokia 9 PureView</h2>
+                <ul>
+                    <li>• 15.21 cm (5.99 inch) Quad HD+ Display</li>
+                    <li>• 12MP ZEISS + 12MP ZEISS + 12MP + 12MP + 12MP | <br>20MP Front Camera</li>
+                    <li>• 3320 mAh Battery</li>
+                    <li>• Qualcomm Snapdragon 845 Processor</li>
+
+                </ul>
+            </div>
+            <div>
+                <h2 class="price">₹56,299</h2>
+
+                <button type="button" class="cart">Add to Cart</button>
+            </div>
+
+        </div>
+
+        <div class="product">
+            <div>
+
+                <img src="assets/Vivo Y200e.png" alt="Vivo Y200e" class="devices">
+            </div>
+            <div>
+                <h2 class="name">Vivo Y200e 5G</h2>
+                <ul>
+                    <li>• 16.94 cm (6.67 inch) Full HD+ AMOLED Display</li>
+                    <li>• 50MP + 2MP | 16MP Front Camera</li>
+                    <li>• 5000 mAh Battery</li>
+                    <li>• Snapdragon 4 Gen 2 Processor</li>
+                </ul>
+            </div>
+            <div class="vprice">
+                <h2 class="price">₹19,999</h2>
+                <p class="oprice">₹25,999</p>
+                <button type="button" class="cart">Add to Cart</button>
+            </div>
+
+        </div>
+
+        <div class="product">
+            <div>
+
+                <img src="assets/Motorola edge 50  neo.png" alt="moto edge 50 neo" class="devices moto">
+            </div>
+            <div>
+                <h2 class="name">Motorola Edge 50 Neo</h2>
+                <ul>
+                    <li>• 16.26 cm (6.4 inch) Super HD Display</li>
+                    <li>• 50MP + 13MP + 10MP | 32MP Front Camera</li>
+                    <li>• 4310 mAh Battery</li>
+                    <li>• Dimensity 7300 Processor</li>
+                </ul>
+            </div>
+            <div>
+                <h2 class="price">₹20,999</h2>
+                <p class="oprice">₹29,999</p>
+                <button type="button" class="cart">Add to Cart</button>
+            </div>
+
+        </div>
+
+        <div class="product">
+            <div>
+
+                <img src="assets/galaxy A6+.png" alt="galaxy s9+" class="devices a6">
+            </div>
+            <div>
+                <h2 class="name">SAMSUNG Galaxy A6 Plus</h2>
+                <ul>
+                    <li>• 15.24 cm (6.0 inch) Amoled Display</li>
+                    <li>• 16MP + 5MP | 24MP Front Camera</li>
+                    <li>• 3500 mAh Battery</li>
+                    <li>• Snapdragon 450 Processor</li>
+                </ul>
+            </div>
+            <div>
+                <h2 class="price">₹17,990</h2>
+                <p class="oprice">₹20,990</p>
+                <button type="button" class="cart">Add to Cart</button>
+            </div>
+
+        </div>
+
+        <div class="product">
+            <div>
+
+                <img src="assets/Nokia 5.1+.png" alt="Nokia 5.1+" class="devices nokia5">
+            </div>
+            <div>
+                <h2 class="name">Nokia 5.1 Plus</h2>
+                <ul>
+                    <li>• 14.73 cm (5.8 inch) HD+ Display</li>
+                    <li>• 13MP + 5MP | 8MP Front Camera</li>
+                    <li>• 3060 mAh Battery</li>
+                    <li>• MediaTek Helio P60 Processor</li>
+                </ul>
+            </div>
+            <div>
+                <h2 class="price">₹10,999</h2>
+                <p class="oprice">₹15,499</p>
+                <button type="button" class="cart">Add to Cart</button>
+            </div>
+
+        </div>
+
+        <div class="product">
+            <div>
+
+                <img src="assets/Redmi 8.png" alt="Redmi 8" class="devices">
+            </div>
+            <div>
+                <h2 class="name">Redmi 8</h2>
+                <ul>
+                    <li>• 15.8 cm (6.22 inch) HD+ Display</li>
+                    <li>• 12MP + 2MP | 8MP Front Camera</li>
+                    <li>• 5000 mAh Battery</li>
+                    <li>• Qualcomm Snapdragon 439 Processor</li>
+                </ul>
+            </div>
+            <div>
+                <h2 class="price">₹10,999</h2>
+                <p class="oprice">₹15,999</p>
+                <button type="button" class="cart">Add to Cart</button>
+            </div>
+
+        </div>
+
+        <div class="product">
+            <div>
+
+                <img src="assets/oppo a53s 5G.png" alt="oppo a53s 5G" class="devices">
+            </div>
+            <div>
+                <h2 class="name">OPPO A53s 5G</h2>
+                <ul>
+                    <li>• 16.56 cm (6.52 inch) HD+ Display</li>
+                    <li>• 13MP + 2MP + 2MP | 8MP Front Camera</li>
+                    <li>• 5000 mAh Battery</li>
+                    <li>• MediaTek Dimensity 700 Processor</li>
+                </ul>
+            </div>
+            <div>
+                <h2 class="price">₹14,999</h2>
+                <p class="oprice">₹19,999</p>
+                <button type="button" class="cart">Add to Cart</button>
+            </div>
+
+        </div>
+
+        <div class="product">
+            <div>
+
+                <img src="assets/Vivo v50.png" alt="Vivo v50" class="devices">
+            </div>
+            <div>
+                <h2 class="name">Vivo V50 5G</h2>
+                <ul>
+                    <li>• 17.2 cm (6.77 inch) Display</li>
+                    <li>• 50MP ZEISS + 50MP | 50MP Front Camera</li>
+                    <li>• 6000 mAh Battery</li>
+                    <li>• 7 Gen 3 Processor</li>
+                </ul>
+            </div>
+            <div>
+                <h2 class="price">₹36,999</h2>
+                <p class="oprice">₹36,999</p>
+                <button type="button" class="cart">Add to Cart</button>
+            </div>
+
+        </div>
+
+        <div class="product">
+            <div>
+
+                <img src="assets/Realme GT 7 pro.png" alt="Realme GT 7 pro" class="devices">
+            </div>
+            <div class="rname">
+                <h2 class="name">Realme GT 7 Pro</h2>
+                <ul>
+                    <li>• 17.22 cm (6.78 inch) Display</li>
+                    <li>• 50MP Rear Camera</li>
+                    <li>• 5800 mAh Battery</li>
+                    <li>• Snapdragon 8 Elite</li>
+                </ul>
+            </div>
+            <div>
+                <h2 class="price">₹59,999</h2>
+                <p class="oprice">₹74,999</p>
+                <button type="button" class="cart">Add to Cart</button>
+            </div>
+
+        </div>
+
+        <div class="product">
+            <div>
+
+                <img src="assets/Vivo T3 Pro.png" alt="Vivo T3 Pro" class="devices">
+            </div>
+            <div>
+                <h2 class="name">Vivo T3 Pro 5G</h2>
+                <ul>
+                    <li>• 17.2 cm (6.77 inch) Full HD+ AMOLED Display</li>
+                    <li>• 50MP + 8MP | 16MP Front Camera</li>
+                    <li>• 5500 mAh Battery</li>
+                    <li>• Snapdragon 7 Gen 3 Processorr</li>
+                </ul>
+            </div>
+            <div>
+                <h2 class="price">₹22,999</h2>
+                <p class="oprice">₹29,999</p>
+                <button type="button" class="cart">Add to Cart</button>
+            </div>
+
+        </div>
+
+        <div class="product">
+            <div>
+
+                <img src="assets/Nothing phone 2a.png" alt="Nothing phone 2a" class="devices Nothing">
+            </div>
+            <div>
+                <h2 class="name">Nothing Phone (2a) 5G</h2>
+                <ul>
+                    <li>• 17.02 cm (6.7 inch) Full HD+ Display</li>
+                    <li>• 50MP (OIS) + 50MP | 32MP Front Camera</li>
+                    <li>• 5000 mAh Battery</li>
+                    <li>• Dimensity 7200 Pro Processor</li>
+                </ul>
+            </div>
+            <div>
+                <h2 class="price">₹25,999</h2>
+                <p class="oprice">₹27,999</p>
+                <button type="button" class="cart">Add to Cart</button>
+            </div>
+
+        </div>
+
+        <div class="product">
+            <div>
+
+                <img src="assets/LAVA Agni 3.png" alt="LAVA Agni 3" class="devices lava">
+            </div>
+            <div class="lavaname">
+                <h2 class="name">LAVA Agni 3 5G</h2>
+                <ul>
+                    <li>• 17.02 cm (6.7 inch) Display</li>
+                    <li>• 50MP Rear Camera</li>
+                    <li>• 5000 mAh Battery</li>
+                    <li>• MediaTek Dimensity 7300X</li>
+                </ul>
+            </div>
+            <div>
+                <h2 class="price">₹24,990</h2>
+                <p class="oprice">₹28,999</p>
+                <button type="button" class="cart">Add to Cart</button>
+            </div>
+
+        </div>
+    </div>
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-grid">
+                <!-- About Column -->
+                <div class="footer-col">
+                    <h3><i class="fas fa-mobile-alt"></i> Jigar Mobile</h3>
+                    <p>
+                        Your trusted partner for premium mobile devices and accessories.
+                        Serving tech enthusiasts since 2020.
+                    </p>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li>
+                            <a href="offer.html"><i class="fas fa-chevron-right"></i> About Us</a>
+                        </li>
+                        <li>
+                            <a href="shop.html"><i class="fas fa-chevron-right"></i> Shop</a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fas fa-chevron-right"></i> FAQ</a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fas fa-chevron-right"></i> Warranty</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Social Media -->
+                <div class="footer-col">
+                    <h3>Connect With Us</h3>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/share/15MFjaSgSw/" target="_blank" class="social-icon"><i
+                                class="fab fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/jigar_ahir_0012?igsh=Mmxxcnh6NjU0N3Y3" target="_blank"
+                            class="social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="https://x.com/Jigar_Patat_?t=p-kjILUrY2z432_-a06v0Q&s=08" target="_blank"
+                            class="social-icon"><i class="fab fa-twitter"></i></a>
+                        <a href="https://wa.me/qr/CNMSSFGTVRO5G1" target="_blank" class="social-icon"><i
+                                class="fab fa-whatsapp"></i></a>
+                    </div>
+
+                    <h3 style="margin-top: 1.5rem">Newsletter</h3>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Enter your email" />
+                        <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="footer-col">
+                    <h3>Contact Info</h3>
+                    <ul class="contact-info">
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i> 12 Mobile plaza, veraval
+                        </li>
+                        <li><i class="fas fa-phone"></i> +91 7861978199</li>
+                        <li><i class="fas fa-envelope"></i> patatjigar0012@gmail.com</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="copyright">
+                <p>
+                    © 2023 Jigar Mobile. All rights reserved |
+                    <i class="fas fa-heart"></i>
+                </p>
+                <div class="payment-methods">
+                    <i class="fab fa-cc-visa"></i>
+                    <i class="fab fa-cc-mastercard"></i>
+                    <i class="fab fa-cc-paypal"></i>
+                    <i class="fab fa-cc-amazon-pay"></i>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Toggle Mobile Menu with Smooth Animation
+        document.getElementById('menu-btn').addEventListener('click', function () {
+            let mobileMenu = document.getElementById('mobile-menu');
+            mobileMenu.classList.toggle('active');
+        });
+
+        // Toggle Desktop Search Bar
+        document.getElementById('search-btn').addEventListener('click', function () {
+            let searchBar = document.getElementById('search-bar');
+            searchBar.classList.toggle('active');
+        });
+
+        // Toggle Mobile Search Bar with Smooth Animation
+        document.getElementById('mobile-search-btn').addEventListener('click', function () {
+            let mobileSearchContainer = document.getElementById('mobile-search-container');
+
+            if (mobileSearchContainer.classList.contains("active")) {
+                mobileSearchContainer.classList.remove("active");
+                setTimeout(() => {
+                    mobileSearchContainer.style.display = "none";
+                }, 300);
+            } else {
+                mobileSearchContainer.style.display = "block";
+                setTimeout(() => {
+                    mobileSearchContainer.classList.add("active");
+                }, 10);
+            }
+        });
+
+        // Sticky Navbar Effect
+        window.addEventListener('scroll', function () {
+            let navbar = document.getElementById('navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('sticky-nav');
+            } else {
+                navbar.classList.remove('sticky-nav');
+            }
+        });
+
+        // cart icon
+        let cartButtons = document.querySelectorAll(".cart");
+
+        cartButtons.forEach(function (button) {
+            button.addEventListener("click", function () {
+                // Try to find .name element inside same parent or nearby
+                let parent = button.parentElement;
+                let titleElement = parent.querySelector(".name") || parent.previousElementSibling;
+
+                let title = titleElement ? titleElement.innerText : "Unknown Product";
+
+                let price = this.getAttribute("price");
+
+                let cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+                cart.push({ title: title, price: price });
+
+                localStorage.setItem("cart", JSON.stringify(cart));
+
+                alert(title + " added to cart!");
+            });
+        });
+    </script>
+</body>
+
+</html>

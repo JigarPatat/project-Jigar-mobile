@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jigar mobile</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+</head>
+
+<body>
+
+    <nav id="navbar"
+        class="bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 p-4 shadow-lg fixed top-0 w-full z-50 transition-all">
+        <div class="max-w-7xl mx-auto flex justify-between items-center relative">
+            <div class="flex items-center space-x-3">
+                <img src="assets/jigarlogo.png" alt="Mobile Point Logo" class="h-12 nav-logo">
+                <h1 class="text-white text-3xl font-extrabold tracking-wide animate-pulse">JIGAR MOBILE</h1>
+            </div>
+
+            <!-- Desktop Navbar -->
+            <div class="hidden md:flex space-x-6 items-center">
+                <a href="index.html" class=" text-white text-lg font-semibold paddi2">Home</a>
+                <a href="shop.html" class="nav-item text-white text-lg font-semibold">Shop</a>
+                <a href="offer.html" class="nav-item text-white text-lg font-semibold">About</a>
+                <a href="contact.html" class="nav-item text-white text-lg font-semibold">Contact</a>
+                <input type="text" id="search-bar" placeholder="Search..." class="search-bar">
+                <button id="search-btn" class="text-white text-xl ml-2 sbtn">🔍</button>
+            </div>
+
+            <div class="bar">
+                <a href="cart.html" class="text-white text-2xl cart-icon">
+                    <span class="cart-emoji">🛒</span> Cart
+                </a>
+                <a href="signin.html"
+                    class="bg-white text-gray-900 px-5 py-2 rounded-full font-bold shadow-lg hover:bg-gray-200 transition text-lg signin2">Login</a>
+            </div>
+            <!-- Mobile Navbar Buttons -->
+            <div class="flex md:hidden space-x-3">
+                <button id="mobile-search-btn" class="text-white text-xl">🔍</button>
+                <button id="menu-btn" class="text-white text-3xl font-bold">☰</button>
+            </div>
+
+
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="bg-white text-black p-4 mt-2 shadow-lg rounded-lg">
+                <a href="index.html" class="block py-2 text-lg font-semibold">Home</a>
+                <a href="shop.html" class="block py-2 text-lg font-semibold">Shop</a>
+                <a href="offer.html" class="block py-2 text-lg font-semibold">About</a>
+                <a href="contact.html" class="block py-2 text-lg font-semibold">Contact</a>
+                <a href="signin.html"
+                    class="block py-2 bg-blue-500 text-white text-center rounded-lg font-bold text-lg hover:bg-blue-600 transition mt-2">Login</a>
+            </div>
+    </nav>
+    <!-- Single Slider with Three Pages -->
+    <div class="swiper mySwiper swiper loading">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="assets/vivo-x200-pro.png" alt="Image 1"></div>
+            <div class="swiper-slide"><img src="assets/galaxy-s24-ultra.jpg" alt="Image 2"></div>
+            <div class="swiper-slide"><img src="assets/IPhone-16-pro-max.png" alt="Image 3"></div>
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
+
+
+    <!-- Mobile Search Bar -->
+    <div id="mobile-search-container" class="mobile-search-container">
+        <input type="text" placeholder="Search..." class="mobile-search-bar">
+    </div>
+
+    <section class="hero">
+        <h2><b>Find Your Perfect Smartphone!</b></h2>
+        <p>Latest smartphones at unbeatable prices</p>
+        <div class="shop-btn"> <a href="shop.html">Shop Now</a></div>
+    </section>
+
+    <section class="categories">
+        <h2>Shop by Brand</h2>
+        <div class="category-list">
+            <a href="shop.html"><img src="assets/vivo.svg" alt="vivo"></a>
+            <a href="shop.html"><img src="assets/Apple.svg" alt="apple"></a>
+            <a href="shop.html"><img src="assets/samsung.svg" alt="samsung"></a>
+            <a href="shop.html"><img src="assets/nokia.svg" alt="nokia"></a>
+            <a href="shop.html"><img src="assets/IQOO.svg" alt="IQOO"></a>
+            <a href="shop.html"><img src="assets/realme.svg" alt="realme"></a>
+            <a href="shop.html"><img src="assets/nothing.svg" alt="nothing"></a>
+            <a href="shop.html"><img src="assets/motorola.svg" alt="motorola"></a>
+            <a href="shop.html"><img src="assets/oppo.svg" alt="oppo"></a>
+            <a href="shop.html"><img src="assets/mi.svg" alt="MI"></a>
+
+        </div>
+    </section>
+
+    <section class="products">
+        <h2>Best-Selling Phones</h2>
+        <div class="product-list">
+            <div class="product">
+                <!-- <img src="assets/iph" alt="iPhone 16 Pro"> -->
+                <h3><b>iPhone 16 Pro Max</b></h3>
+                <h2 class="price">₹1,55,900</h2>
+                <p class="oprice">₹1,64,900</p>
+                <a href="shop.html" class="buy-btn">Full Details</a>
+            </div>
+            <div class="product">
+                <!-- <img src="assets/iph" alt="iPhone 16 Pro"> -->
+                <h3><b>Vivo X200 Pro 5G</b></h3>
+                <h2 class="price">₹94,999</h2>
+                <p class="oprice">₹1,01,999</p>
+                <a href="shop.html" class="buy-btn">Full Details</a>
+            </div>
+            <div class="product">
+                <!-- <img src="assets/iph" alt="iPhone 16 Pro"> -->
+                <h3><b>SAMSUNG Galaxy S25 Ultra 5G</b></h3>
+                <h2 class="price">₹1,29,999</h2>
+                <p class="oprice">₹1,35,999</p>
+                <a href="shop.html" class="buy-btn">Full Details</a>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="why-choose-us">
+        <h2>Why Choose Us?</h2>
+        <div class="features">
+            <div class="feature">100% Genuine Mobiles</div>
+            <div class="feature">Best Price Guarantee</div>
+            <div class="feature">Fast & Secure Delivery</div>
+            <div class="feature">Easy Returns</div>
+        </div>
+    </section>
+
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-grid">
+                <!-- About Column -->
+                <div class="footer-col">
+                    <h3><i class="fas fa-mobile-alt"></i> Jigar Mobile</h3>
+                    <p>
+                        Your trusted partner for premium mobile devices and accessories.
+                        Serving tech enthusiasts since 2020.
+                    </p>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li>
+                            <a href="offer.html"><i class="fas fa-chevron-right"></i> About Us</a>
+                        </li>
+                        <li>
+                            <a href="shop.html"><i class="fas fa-chevron-right"></i> Shop</a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fas fa-chevron-right"></i> FAQ</a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fas fa-chevron-right"></i> Warranty</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Social Media -->
+                <div class="footer-col">
+                    <h3>Connect With Us</h3>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/share/15MFjaSgSw/" target="_blank" class="social-icon"><i
+                                class="fab fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/jigar_ahir_0012?igsh=Mmxxcnh6NjU0N3Y3" target="_blank"
+                            class="social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="https://x.com/Jigar_Patat_?t=p-kjILUrY2z432_-a06v0Q&s=08" target="_blank"
+                            class="social-icon"><i class="fab fa-twitter"></i></a>
+                        <a href="https://wa.me/qr/CNMSSFGTVRO5G1" target="_blank" class="social-icon"><i
+                                class="fab fa-whatsapp"></i></a>
+                    </div>
+
+                    <h3 style="margin-top: 1.5rem">Newsletter</h3>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Enter your email" />
+                        <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="footer-col">
+                    <h3>Contact Info</h3>
+                    <ul class="contact-info">
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i> 12 Mobile plaza, veraval
+                        </li>
+                        <li><i class="fas fa-phone"></i> +91 7861978199</li>
+                        <li><i class="fas fa-envelope"></i> patatjigar0012@gmail.com</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="copyright">
+                <p>
+                    © 2023 Jigar Mobile. All rights reserved |
+                    <i class="fas fa-heart"></i>
+                </p>
+                <div class="payment-methods">
+                    <i class="fab fa-cc-visa"></i>
+                    <i class="fab fa-cc-mastercard"></i>
+                    <i class="fab fa-cc-paypal"></i>
+                    <i class="fab fa-cc-amazon-pay"></i>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        // Toggle Mobile Menu with Smooth Animation
+        document.getElementById('menu-btn').addEventListener('click', function () {
+            let mobileMenu = document.getElementById('mobile-menu');
+            mobileMenu.classList.toggle('active');
+        });
+
+        // Toggle Desktop Search Bar
+        document.getElementById('search-btn').addEventListener('click', function () {
+            let searchBar = document.getElementById('search-bar');
+            searchBar.classList.toggle('active');
+        });
+
+        // Toggle Mobile Search Bar with Smooth Animation
+        document.getElementById('mobile-search-btn').addEventListener('click', function () {
+            let mobileSearchContainer = document.getElementById('mobile-search-container');
+
+            if (mobileSearchContainer.classList.contains("active")) {
+                mobileSearchContainer.classList.remove("active");
+                setTimeout(() => {
+                    mobileSearchContainer.style.display = "none";
+                }, 300);
+            } else {
+                mobileSearchContainer.style.display = "block";
+                setTimeout(() => {
+                    mobileSearchContainer.classList.add("active");
+                }, 10);
+            }
+        });
+
+        // Sticky Navbar Effect
+        window.addEventListener('scroll', function () {
+            let navbar = document.getElementById('navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('sticky-nav');
+            } else {
+                navbar.classList.remove('sticky-nav');
+            }
+        });
+        var swiper = new Swiper(".mySwiper", {
+            loop: true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            autoplay: {
+                delay: 2000,
+                disableOnInteraction: false,
+            },
+        });
+
+    </script>
+</body>
+
+</html>

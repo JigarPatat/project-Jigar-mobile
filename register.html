@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Account</title>
+    <link rel="stylesheet" href="css/register.css">
+</head>
+
+<body>
+    <div class="background">
+        <div class="container">
+            <div class="form-container">
+                <h1>Create Your Account</h1>
+                <p class="subtitle">Fill in the details below to create a new account.</p>
+                <form action="#" method="POST">
+                    <div class="input-group">
+                        <input type="text" id="username" name="username" placeholder="Username" required>
+                    </div>
+                    <div class="input-group">
+                        <input type="email" id="email" name="email" placeholder="Email Address" required>
+                    </div>
+                    <div class="input-group">
+                        <input type="password" id="password" name="password" placeholder="Password" required>
+                    </div>
+                    <div class="submit-container">
+                        <button type="submit" class="submit-btn">Create Account</button>
+                    </div>
+                    <div class="footer-links">
+                        <a href="signin.html">Back to Log In</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.getElementById("signupForm").addEventListener("submit", function (event) {
+            event.preventDefault();
+
+            let name = document.getElementById("name").value;
+            let email = document.getElementById("email").value;
+            let password = document.getElementById("password").value;
+
+            let user = { name, email, password };
+            localStorage.setItem("user", JSON.stringify(user));
+
+            alert("Account created successfully! Now login.");
+            window.location.href = "signin.html"; // Redirect to login page
+        });
+    </script>
+</body>
+
+</html>

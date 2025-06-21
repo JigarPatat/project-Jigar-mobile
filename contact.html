@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us - Jigar Mobile</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="css/contact.css" />
+  <link rel="icon" type="image/png" href="assets/favicon.png" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+
+</head>
+
+<body>
+  <nav id="navbar"
+    class="bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 p-4 shadow-lg fixed top-0 w-full z-50 transition-all">
+    <div class="max-w-7xl mx-auto flex justify-between items-center relative">
+      <div class="flex items-center space-x-3">
+        <img src="assets/jigarlogo.png" alt="Mobile Point Logo" class="h-12 nav-logo" />
+        <h1 class="text-white text-3xl font-extrabold tracking-wide animate-pulse">
+          JIGAR MOBILE
+        </h1>
+      </div>
+
+      <!-- Desktop Navbar -->
+      <div class="hidden md:flex space-x-6 items-center">
+        <a href="index.html" class="nav-item text-white text-lg font-semibold">Home</a>
+        <a href="shop.html" class="nav-item text-white text-lg font-semibold">Shop</a>
+        <a href="offer.html" class="nav-item text-white text-lg font-semibold">About</a>
+        <a href="contact.html" class="text-white text-lg font-semibold paddi2">Contact</a>
+        <input type="text" id="search-bar" placeholder="Search..." class="search-bar" />
+        <button id="search-btn" class="text-white text-xl ml-2 sbtn">
+          🔍
+        </button>
+      </div>
+      <div>
+        <a href="cart.html" class="text-white text-2xl cart-icon">
+          <span class="cart-emoji">🛒</span> Cart
+        </a>
+        <a href="signin.html"
+          class="bg-white text-gray-900 px-5 py-2 rounded-full font-bold shadow-lg hover:bg-gray-200 transition text-lg signin2">Login</a>
+      </div>
+      <!-- Mobile Navbar Buttons -->
+      <div class="flex md:hidden space-x-3">
+        <button id="mobile-search-btn" class="text-white text-xl">🔍</button>
+        <button id="menu-btn" class="text-white text-3xl font-bold">☰</button>
+      </div>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="bg-white text-black p-4 mt-2 shadow-lg rounded-lg">
+      <a href="index.html" class="block py-2 text-lg font-semibold">Home</a>
+      <a href="shop.html" class="block py-2 text-lg font-semibold">Shop</a>
+      <a href="offer.html" class="block py-2 text-lg font-semibold">About</a>
+      <a href="contact.html" class="block py-2 text-lg font-semibold">Contact</a>
+      <a href="signin.html"
+        class="block py-2 bg-blue-500 text-white text-center rounded-lg font-bold text-lg hover:bg-blue-600 transition mt-2">Login</a>
+    </div>
+  </nav>
+  <div class="separation"></div>
+
+  <!-- Navigation (Add your existing navigation here) -->
+
+  <header class="contact-header">
+    <div class="logo">
+      <i class="fas fa-mobile-alt"></i>
+      <h1>Contact Jigar Mobile</h1>
+      <p>We're Here to Help You!</p>
+    </div>
+  </header>
+
+  <div class="contact-container">
+    <div class="contact-grid">
+      <!-- Contact Form -->
+      <div class="contact-form">
+        <h2 style="color: #2b6cb0; margin-bottom: 2rem">Send Us a Message</h2>
+        <form id="contactForm">
+          <div class="form-group" style="animation-delay: 0.2s">
+            <input type="text" name="name" placeholder="Your Name" required />
+          </div>
+          <div class="form-group" style="animation-delay: 0.3s">
+            <input type="text" name="mnumber" placeholder="Mobile Number" required />
+          </div>
+          <div class="form-group" style="animation-delay: 0.4s">
+            <input type="email" name="email" placeholder="Your Email" required />
+          </div>
+          <div class="form-group" style="animation-delay: 0.5s">
+            <select name="subject" required>
+              <option value="">Select Subject</option>
+              <option value="sales">Sales Inquiry</option>
+              <option value="support">Technical Support</option>
+              <option value="returns">Returns & Warranty</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+          <div class="form-group" style="animation-delay: 0.6s">
+            <textarea name="message" placeholder="Your Message" rows="6" required></textarea>
+          </div>
+          <button type="submit" class="submit-btn" style="animation-delay: 0.7s">
+            Send Message <i class="fas fa-paper-plane"></i>
+          </button>
+        </form>
+      </div>
+
+      <!-- Contact Details -->
+      <div class="contact-details">
+        <div class="detail-item">
+          <h3><i class="fas fa-map-marker-alt"></i> Our Store</h3>
+          <p>
+            12 Mobile Plaza<br />
+            veraval, 12345<br />
+            India
+          </p>
+        </div>
+
+        <div class="detail-item">
+          <h3><i class="fas fa-phone"></i> Call Us</h3>
+          <p>
+            +91 78619 78199<br />
+            Mon-Sat: 10AM - 8PM
+          </p>
+        </div>
+
+        <div class="detail-item">
+          <h3><i class="fas fa-envelope"></i> Email Us</h3>
+          <p>
+            patatjigar0012@gmail.com<br />
+            support@jigarmobile.com
+          </p>
+        </div>
+
+        <div class="social-links">
+          <a href="https://www.facebook.com/share/15MFjaSgSw/" target="_blank"><i class="fab fa-facebook"></i></a>
+          <a href="https://www.instagram.com/jigar_ahir_0012?igsh=Mmxxcnh6NjU0N3Y3" target="_blank"><i
+              class="fab fa-instagram"></i></a>
+          <a href="https://x.com/Jigar_Patat_?t=p-kjILUrY2z432_-a06v0Q&s=08" target="_blank"><i
+              class="fab fa-twitter"></i></a>
+          <a href="https://wa.me/qr/CNMSSFGTVRO5G1" target="_blank"><i class="fab fa-whatsapp"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Map Section -->
+    <div class="map-section">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d404.36234853243354!2d70.39178435111319!3d20.944118053513154!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bfd33005425cb79%3A0xda420c907e3cacb7!2sJigar%20patat!5e1!3m2!1sgu!2sin!4v1740828840647!5m2!1sgu!2sin"
+        width="100%" height="400" style="border: 0" allowfullscreen="" loading="lazy">
+      </iframe>
+    </div>
+  </div>
+
+  <!-- Add this right before closing </body> tag -->
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-grid">
+        <!-- About Column -->
+        <div class="footer-col">
+          <h3><i class="fas fa-mobile-alt"></i> Jigar Mobile</h3>
+          <p>
+            Your trusted partner for premium mobile devices and accessories.
+            Serving tech enthusiasts since 2020.
+          </p>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="footer-col">
+          <h3>Quick Links</h3>
+          <ul>
+            <li>
+              <a href="offer.html"><i class="fas fa-chevron-right"></i> About Us</a>
+            </li>
+            <li>
+              <a href="shop.html"><i class="fas fa-chevron-right"></i> Shop</a>
+            </li>
+            <li>
+              <a href="#"><i class="fas fa-chevron-right"></i> FAQ</a>
+            </li>
+            <li>
+              <a href="#"><i class="fas fa-chevron-right"></i> Warranty</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Social Media -->
+        <div class="footer-col">
+          <h3>Connect With Us</h3>
+          <div class="social-links">
+            <a href="https://www.facebook.com/share/15MFjaSgSw/" target="_blank" class="social-icon"><i
+                class="fab fa-facebook"></i></a>
+            <a href="https://www.instagram.com/jigar_ahir_0012?igsh=Mmxxcnh6NjU0N3Y3" target="_blank"
+              class="social-icon"><i class="fab fa-instagram"></i></a>
+            <a href="https://x.com/Jigar_Patat_?t=p-kjILUrY2z432_-a06v0Q&s=08" target="_blank" class="social-icon"><i
+                class="fab fa-twitter"></i></a>
+            <a href="https://wa.me/qr/CNMSSFGTVRO5G1" target="_blank" class="social-icon"><i
+                class="fab fa-whatsapp"></i></a>
+          </div>
+
+          <h3 style="margin-top: 1.5rem">Newsletter</h3>
+          <form class="newsletter-form">
+            <input type="email" placeholder="Enter your email" />
+            <button type="submit"><i class="fas fa-paper-plane"></i></button>
+          </form>
+        </div>
+
+        <!-- Contact Info -->
+        <div class="footer-col">
+          <h3>Contact Info</h3>
+          <ul class="contact-info">
+            <li>
+              <i class="fas fa-map-marker-alt"></i> 12 Mobile plaza, veraval
+            </li>
+            <li><i class="fas fa-phone"></i> +91 7861978199</li>
+            <li><i class="fas fa-envelope"></i> patatjigar0012@gmail.com</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="copyright">
+        <p>
+          © 2023 Jigar Mobile. All rights reserved |
+          <i class="fas fa-heart"></i>
+        </p>
+        <div class="payment-methods">
+          <i class="fab fa-cc-visa"></i>
+          <i class="fab fa-cc-mastercard"></i>
+          <i class="fab fa-cc-paypal"></i>
+          <i class="fab fa-cc-amazon-pay"></i>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Footer (Add your existing footer here) -->
+  <script>
+    // Toggle Mobile Menu with Smooth Animation
+    document.getElementById('menu-btn').addEventListener('click', function () {
+      let mobileMenu = document.getElementById('mobile-menu');
+      mobileMenu.classList.toggle('active');
+    });
+
+    // Toggle Desktop Search Bar
+    document.getElementById('search-btn').addEventListener('click', function () {
+      let searchBar = document.getElementById('search-bar');
+      searchBar.classList.toggle('active');
+    });
+
+    // Toggle Mobile Search Bar with Smooth Animation
+    document.getElementById('mobile-search-btn').addEventListener('click', function () {
+      let mobileSearchContainer = document.getElementById('mobile-search-container');
+
+      if (mobileSearchContainer.classList.contains("active")) {
+        mobileSearchContainer.classList.remove("active");
+        setTimeout(() => {
+          mobileSearchContainer.style.display = "none";
+        }, 300);
+      } else {
+        mobileSearchContainer.style.display = "block";
+        setTimeout(() => {
+          mobileSearchContainer.classList.add("active");
+        }, 10);
+      }
+    });
+
+    // Sticky Navbar Effect
+    window.addEventListener('scroll', function () {
+      let navbar = document.getElementById('navbar');
+      if (window.scrollY > 50) {
+        navbar.classList.add('sticky-nav');
+      } else {
+        navbar.classList.remove('sticky-nav');
+      }
+    });
+    var swiper = new Swiper(".mySwiper", {
+      loop: true,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      autoplay: {
+        delay: 2000,
+        disableOnInteraction: false,
+      },
+    });
+    // Form Submission
+    document
+      .getElementById("contactForm")
+      .addEventListener("submit", function (e) {
+        e.preventDefault();
+
+        // Add your form submission logic here
+        Swal.fire({
+          icon: "success",
+          title: "Message Sent!",
+          text: "We will respond within 24 hours",
+          confirmButtonColor: "#2b6cb0",
+        }).then(() => {
+          this.reset();
+        });
+      });
+
+    // Add Intersection Observer for scroll animations
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.style.opacity = 1;
+          entry.target.style.transform = "translateY(0)";
+        }
+      });
+    });
+
+    document
+      .querySelectorAll(".form-group, .contact-details, .map-section")
+      .forEach((el) => {
+        observer.observe(el);
+      });
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>My Cart</title>
+    <link rel="stylesheet" href="css/cart.css">
+</head>
+
+<body>
+    <h1>Your Shopping Cart</h1>
+    <div id="cart-container"></div>
+
+    <script>
+        // Get cart items from localStorage
+        let cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+        // Select container to show cart items
+        let container = document.getElementById("cart-container");
+
+        // If cart is empty
+        if (cart.length === 0) {
+            container.innerHTML = `
+                <div class="empty-cart">
+                    <p>Your cart is empty</p>
+                    <p>Add some items to get started</p>
+                    <a  href="shop.html">
+                        <button class="shop-btn">Continue Shopping</button>
+                    </a>
+                </div>
+            `;
+        } else {
+            // Display each item
+            cart.forEach(function (item, index) {
+                let div = document.createElement("div");
+                div.classList.add("cart-item");
+                div.innerHTML = `
+                    <div class="item-details">
+                        <h3>${item.title}</h3>
+                        ${item.category ? `<p>${item.category}</p>` : ''}
+                    </div>
+                    <div class="item-price">₹${item.price}</div>
+                    <button class="remove-btn" onclick="removeItem(${index})">Remove</button>
+                `;
+                container.appendChild(div);
+            });
+
+            // Calculate total
+            let total = cart.reduce((sum, item) => sum + parseFloat(item.price), 0);
+
+            // Create cart footer
+            let footer = document.createElement("div");
+            footer.classList.add("cart-footer");
+            footer.innerHTML = `
+                <div class="total-amount">Total: <span>₹${total.toFixed(2)}</span></div>
+                <button class="checkout-btn">Proceed to Checkout</button>
+            `;
+            container.appendChild(footer);
+        }
+
+        // Function to remove item
+        function removeItem(index) {
+            cart.splice(index, 1);
+            localStorage.setItem("cart", JSON.stringify(cart));
+            location.reload();
+        }
+    </script>
+</body>
+
+</html>
