@@ -256,7 +256,8 @@ body {
 .swiper {
     width: 100%;
     height: 300px;
-    margin-top: 2px;
+    margin-top: 10px;
+     /* margin-top: 80px; */
 }
 
 .swiper-slide {
@@ -845,4 +846,69 @@ body {
 
 .footer-col li:nth-child(2) {
     animation-delay: 0.8s;
+}
+
+
+
+
+
+/* responsive slider */
+
+/* ✅ Responsive Swiper Slider Fix */
+
+/* Desktop */
+.swiper {
+    width: 100%;
+    height: 660px;
+}
+
+/* Tablet */
+@media (max-width: 1024px) {
+    .swiper {
+        height: 480px;
+    }
+}
+
+/* Mobile - Large */
+@media (max-width: 768px) {
+    .swiper {
+        height: 300px;
+    }
+}
+
+/* Mobile - Small */
+@media (max-width: 480px) {
+    .swiper {
+        height: 240px;
+    }
+}
+
+/* Optional: Adjust Swiper Slide Margin for Smaller Screens */
+.swiper-slide {
+    margin-top: 80px; /* Default */
+}
+
+@media (max-width: 768px) {
+    .swiper-slide {
+        margin-top: 40px;
+    }
+}
+
+/* Make sure images inside Swiper fit perfectly */
+.swiper-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* In case Swiper slides have padding/margin from earlier CSS */
+.swiper-wrapper {
+    padding: 0 !important;
+    margin: 0 !important;
+}
+@media (max-width: 768px) {
+    .swiper {
+        margin-top: 100px;
+    }
 }
