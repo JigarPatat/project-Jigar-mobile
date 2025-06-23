@@ -907,6 +907,7 @@ body {
     padding: 0 !important;
     margin: 0 !important;
 }
+/* Add width. */
 @media (max-width: 768px) {
     .swiper {
         margin-top: 100px;
